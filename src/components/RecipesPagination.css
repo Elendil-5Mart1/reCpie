@@ -1,0 +1,8 @@
+.page-btn.btn {
+    background: var(--bg-secondary);
+}
+
+.page-btn-container {
+    display: flex;
+    justify-content: space-between;
+}

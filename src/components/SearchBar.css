@@ -1,0 +1,33 @@
+label {
+    font-weight: bold;
+    color: black;
+}
+
+.search-bar-form {
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-bar .btn-primary {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 500px) {
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar .btn-primary {
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+}

@@ -1,0 +1,17 @@
+.filter {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter p {
+  font-weight: bold;
+}
+
+.cuisine-filter, .order-filter {
+  width: 50%;
+}

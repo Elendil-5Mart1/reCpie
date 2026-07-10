@@ -1,0 +1,75 @@
+:root[data-theme="light"] {
+    --bg-primary: #fafafa;
+    --bg-secondary: #f8f9fa;
+    --text-primary: #111111;
+    --text-secondary: #666666;
+    --header-bg: rgb(224, 224, 224);
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+:root[data-theme="dark"] {
+    --bg-primary: #2a2a2a;
+    --bg-secondary: #c9c9c9;
+    --text-primary: #fafafa;
+    --text-secondary: #b0b0b0;
+    --header-bg: #111111;
+    --border-color: #404040;
+    --shadow-color: rgba(110, 110, 110, 0.5);
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.btn-add {
+    color: #198754;
+}
+
+.btn-add:hover {
+    background-color: #198754;
+    color: white;
+}
+
+.btn-del {
+    color: #DC3545;
+}
+
+.btn-del:hover {
+    background-color: #DC3545;
+    color: white;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    /*? margin top pour récupérer l'espace perdu par le "fixed" du header*/
+    margin-top: 85px;
+}
+
+@media (max-width: 1200px) {
+
+    section,
+    .header-container {
+        margin: 0 20px 0;
+    }
+}

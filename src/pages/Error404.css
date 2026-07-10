@@ -1,0 +1,11 @@
+.error404 {
+    height : calc(100vh - 155px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error404 p {
+    color: var(--text-primary);
+}
